@@ -1,0 +1,55 @@
+/* Lia Roberds, CSE 154, HW8, cow.css */
+/* This is the style sheet for the appearance of all pages between the two blue bars. */
+
+/* Mostly Colors */
+body {
+	background-color: white;
+	color: #090e36; /*navy*/
+}
+
+#loginform, #todolist {
+	background-color: #090e36; /*navy*/
+}
+
+#main {
+	background-color: #daff88; /*green*/
+}
+
+#message {
+	color: #ff7d7d; /*pink*/
+}
+
+li {
+	color: #a7f9fb; /*light blue*/
+}
+
+input {
+	background-color: #a7f9fb; /*light blue*/
+}
+
+/* Mostly margins and sizes */
+#main, #message, h2, #loginform, #todolist, input, #todolist li {
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+#main {
+	width: 85%;
+}
+
+#loginform, #todolist, #message, #todolist li {
+	width: 75%;
+}
+
+#main p {
+	font-size: 10pt;
+}
+
+#todolist li {
+	font-size: 20pt;
+	list-style-type: none;
+}

@@ -1,0 +1,42 @@
+/* Lia Roberds, CSE 154 AA, HW7, bacon.css */
+#banner, #w3c {
+	background-color: black;
+	text-align: left;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+body, .odd {
+	background-color: silver;
+}
+
+#frame {
+	width: 90%;
+}
+
+#frame, fieldset, table, caption {
+	margin: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#frame, table {
+	text-align: center;
+	background-color: white;
+	box-shadow: 0 0 15px black;
+}
+
+fieldset, table {
+	width: 50%;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 10pt;
+}
+
+table > tr {
+	font-weight: bold;
+}

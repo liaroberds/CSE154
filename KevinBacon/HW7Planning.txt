@@ -1,0 +1,62 @@
+WHAT WILL EACH FILE DO?
+mymdb.php
+	
+
+common.php
+	
+
+search-all.php
+	JS onclick submit button in search-all form
+	calls function in common with $query as parameter, gets back id number of actor
+	new query: SELECT m.name AS title, m.year FROM movies m JOIN roles r ON m.id = r.movie_id WHERE r.actor_id = '321300'
+	Create new table with this data and create first column with numbers
+	JS inject in HTML page
+	
+	///get id
+	$firstname = $_GET["firstname"] + "%";
+	$lastname = $_GET["lastname"];
+	
+	SELECT id
+	FROM actors 
+	WHERE first_name 
+	LIKE 'Chris%' AND last_name = 'Miller'
+	ORDER BY film_count
+	LIMIT 1
+
+	///get movies
+	SELECT m.name AS title, m.year
+	FROM movies m
+	JOIN roles r ON m.id = r.movie_id
+	WHERE r.actor_id = '22591'
+
+search_kevin.php
+	JS onclick submit button in search-kevin form
+	calls function in common with $query as parameter, gets back id number of actor
+	recall funtion with Bacon
+	
+	$firstname = $_GET["firstname"] + "%";
+	$lastname = $_GET["lastname"];
+	
+	$query = 
+	SELECT * 
+	FROM actors 
+	WHERE first_name LIKE '$firstname' 
+	AND last_name = '$lastname'
+	ORDER BY film_count
+	
+	$query = 
+	SELECT * 
+	FROM actors 
+	WHERE first_name LIKE 'Kevin' 
+	AND last_name = 'Bacon'
+	
+	"SELECT m.name, m.year
+	FROM movies m JOIN roles r1 ON m.id = r1.movie_id
+	JOIN roles r2 ON r1.movie_id = r2.movie_id 
+	WHERE r1.actor_id != r2.actor_id
+	AND r1.actor_id = '$id' 
+	AND r2.actor_id = '$kevin_id'
+	ORDER BY m.year DESC, m.name"
+
+bacon.css
+	styling

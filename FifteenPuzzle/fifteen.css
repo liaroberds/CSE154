@@ -1,0 +1,54 @@
+/* Lia Roberds, CSE 154, HW4, fifteen.css
+ This css file holds the styling of the webpage and the changes when events happen from the .js */
+
+body, #shufflebutton, #photoSelect {
+	font-family: cursive;
+	font-size: 14pt;
+}
+
+body, .tile {
+	text-align: center;
+}
+
+#puzzlearea, #notify {
+	margin: auto;
+	width: 400px;
+}
+
+#puzzlearea {
+	position: relative;
+	height: 400px;
+}
+
+.win {
+	border: 2px solid;
+	background-color: lightblue;
+	color: tomato;
+}
+
+.notsolved {
+	border: 2px dashed lightblue;
+}
+
+.cell {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.tile, .hover {
+	width: 90px;
+	height: 90px;
+	border: 5px solid;
+	font-size: 40pt;
+}
+
+.tile {
+	color: black;
+	cursor: default;
+}
+
+.hover {
+	color: red;
+	cursor: pointer;
+}
